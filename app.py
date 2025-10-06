@@ -5,7 +5,7 @@ from controller import *
 app = Flask(__name__)
 app.secret_key = "12345"
 
-#Creación de la variable cursor para comunicarse con la base de da
+#Creación de la variable cursor para comunicarse con la base de datos
 
 #Ruta para el login
 @app.route('/', methods=['GET', 'POST'])
