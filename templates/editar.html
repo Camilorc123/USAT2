@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Usuario</title>
+</head>
+<body>
+  <h1>Editar Usuario</h1>
+  <form method="POST">
+    Nombre: <input type="text" name="nombre" value="{{ usuario[1] }}" required><br>
+    Usuario: <input type="text" name="usuario" value="{{ usuario[2] }}" required><br>
+    Password (déjalo vacío para no cambiar): <input type="password" name="password"><br>
+    Tipo: <input type="text" name="tipo" value="{{ usuario[4] }}" required><br>
+    Estado: <input type="number" name="estado" value="{{ usuario[5] }}" required><br>
+    <button type="submit">Actualizar</button>
+  </form>
+  <br>
+  <a href="{{ url_for('inicio') }}"> Volver</a>
+</body>
+</html>

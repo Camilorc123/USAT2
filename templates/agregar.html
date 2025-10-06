@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agregar Usuario</title>
+</head>
+<body>
+  <h1>Agregar Usuario</h1>
+  <form method="POST">
+    Nombre: <input type="text" name="nombre" required><br>
+    Usuario: <input type="text" name="usuario" required><br>
+    Password: <input type="password" name="password" required><br>
+    Tipo: <input type="text" name="tipo" required><br>
+    Estado: <input type="number" name="estado" required><br>
+    <button type="submit">Guardar</button>
+  </form>
+  <br>
+  <a href="{{ url_for('inicio') }}">Volver</a>
+</body>
+</html>
